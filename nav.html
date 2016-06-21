@@ -8,21 +8,59 @@
 </head>
 <body >
 	<div>
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-default">
 			<ul class="nav navbar-nav">
 				<li><a href="#"><img src="reap_home.png" class="img-responsive"></img></a></li>
 				<li><a ><img src="text_footer.png"></img></a></li>
-				<li><div class="btn-toolbar">
 					<li><a href="#"><button class ="btn btn-info">Dashboard </button></a></li>
 					<li><a href="#"><button class="btn btn-info">Badges</button></a></li>
 			   		<li><a href="#"><button class="btn btn-info">Certificates</button></a></li>
 			   		<li><a href="#"><button class="btn btn-info">idea</button></a></li>
-				</div></li>
-				
-				
+					<li><a><button class="btn btn-md glyphicon glyphicon-bell"></button></a></li>
 
 			</ul>
 		</nav>
 	</div>
+	<div class="container">
+		<div class="panel panel-default col-md-9">
+   			<div class="panel-heading">Recognize karma</div>
+ 		    <div class="panel-body">
+ 		    	<form class="vertical" role="form">
+ 		    		<div class="form-group">
+ 		    			<div class="form-group col-xs-7"><input type="name" class="form-control" id="name" placeholder="select a newer"></div>
+ 		    			<div class="form-group col-xs-2">
+	 						 <select class="form-control" id="sel1">
+							    <option>Gold</option>
+							    <option>Silver</option>
+							    <option>Bronze</option>
+	 						 </select>
+						</div>
+	 		    		<div class="form-group col-xs-3">
+	 						 <select class="form-control" id="sel2">
+							    <option>Select a karma</option>
+							    <option>extra miler</option>
+							    <option>knowledge Sharing</option>
+							    <option>mentorship</option>
+	 						 </select>
+						</div>
+ 		    		</div>
+ 		    		<div class="form-group">
+     					 <label for="reason">Reason</label>
+    					 <textarea class="form-control" rows="5" id="comment" placeholder="Please select a karma first....."></textarea>
+    				</div>
+ 		    		<div class="form-group col-xs-2 pull-right">
+ 		    			<button class="form-control btn btn-primary " id = "recognise">Recognise</button>
+ 		   			 </div>	
+ 		    		
+ 		    	</form>
+ 		    </div>
+
+ 		</div>	
+
+ 		<div class="panel panel-default col-md-3">
+ 			<div class="panel-heading">My Badges</div>
+ 		</div>
+	</div>
+	
 </body>
 </html>
