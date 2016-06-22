@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>panel</title>
+  <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="reapTest1.css">
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -21,107 +22,227 @@
 
 
 <div class="container-fluid">
-  <div class="col-sm-9">
-    <div class="panel panel-default">
-
-      <div class="panel-heading" style="background: #EA8744;">
-        <div class="row">
-            <div class="col-md-12 " >
-              <strong><img src="silver_badge.png"></img> RECOGNIZE KARMA</strong>
-            </div>  
-        </div>      <!--row -->
-      </div>        <!--panel-headings ended -->
-        <!--panel body -->
-      <div class="panel-body">
-
-          <form class="vertical" role="form">
-
-          <div class="row">
-              <div class="form-group">
-                <div class="form-group col-xs-6"><input type="name" class="form-control" id="name" placeholder="select a newer"></div>
-                <div class="form-group col-xs-2">
-                 <select class="form-control" id="sel1">
-                    <option>Gold</option>
-                    <option>Silver</option>
-                    <option>Bronze</option>
-                 </select>
-                </div>
-                <div class="form-group col-xs-4">
-                 <select class="form-control" id="sel2">
-                    <option>Select a karma</option>
-                    <option>extra miler</option>
-                    <option>knowledge Sharing</option>
-                    <option>mentorship</option>
-                 </select>
-                </div>
-              </div>
-          </div>
-
-          <div class="row ">
-            <div class="col-xs-12">
-              <div class="form-group">
-                 <label for="reason">Reason</label>
-                  <textarea class="form-control" rows="6" id="comment" placeholder="Please select a karma first....."></textarea>
-              </div>
-            </div> 
-          </div> 
-
-          <div class="row">
-            <div col-xs-12>
-              <div class="form-group col-xs-2 pull-right">
-              <button class="form-control btn btn-primary " id = "recognise">Recognise</button>
-             </div> 
-            </div> 
-          </div>
-          
-        </form>
-
-       </div>
-    </div>          <!--panel-default ended -->
-  </div>            <!--col-md-9 ended -->
-
-  <div class="col-md-3">
-          <div class="panel panel-default" style="padding-bottom: 10px;">
-            <div class="panel-heading"  style="background: #8D9FC4;">
-              <div class="row">
-                    <div class="col-md-12">
-                      <strong><img src="silver_badge.png" ></img> MY BADGES</strong>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="panel-body">
-              <div class="row">
-                <div class="col-md-3 badge-content-left">
-                  <img src="passport.jpg"></img>
-                </div>
-                <div class="col-md-9">
-                  <div class="row"  style="text-align: center;">
-                    <label><a href="#">Ishwar Mani Thapa</a></label>
-                  </div>
-              <table class="table" >
-                <thead>
-                    <tr>
-                      <th><img src="gold.png"></th>
-                      <th><img src="silver.png"></th>
-                      <th><img src="bronze.png"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                    </tr>
-                  </tbody>
-              </table>
-                </div>
-              </div>
-              
-            </div>
-          </div> 
+  <div class="row">
+    <div class="col-md-9"">
       
-      </div>       <!--col-md-3 ended -->
+       
+            <div class="panel panel-default">
+
+        <div class="panel-heading" style="background: #EA8744;">
+          <div class="row">
+              <div class="col-md-12 " >
+                <strong><img src="silver_badge.png"></img> RECOGNIZE KARMA</strong>
+              </div>  
+          </div>      <!--row -->
+        </div>        <!--panel-headings ended -->
+          <!--panel body -->
+        <div class="panel-body">
+
+            <form class="vertical" role="form">
+
+            <div class="row">
+                <div class="form-group">
+                  <div class="form-group col-xs-6"><input type="name" class="form-control" id="name" placeholder="select a newer"></div>
+                  <div class="form-group col-xs-2">
+                   <select class="form-control" id="sel1">
+                      <option>Gold</option>
+                      <option>Silver</option>
+                      <option>Bronze</option>
+                   </select>
+                  </div>
+                  <div class="form-group col-xs-4">
+                   <select class="form-control" id="sel2">
+                      <option>Select a karma</option>
+                      <option>extra miler</option>
+                      <option>knowledge Sharing</option>
+                      <option>mentorship</option>
+                   </select>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row ">
+              <div class="col-xs-12">
+                <div class="form-group">
+                   <label for="reason">Reason</label>
+                    <textarea class="form-control" rows="6" id="comment" placeholder="Please select a karma first....."></textarea>
+                </div>
+              </div> 
+            </div> 
+
+            <div class="row">
+              <div col-xs-12>
+                <div class="form-group col-xs-2 pull-right">
+                <button class="form-control btn btn-primary " id = "recognise">Recognise</button>
+               </div> 
+              </div> 
+            </div>
+            
+          </form>
+
+         </div>
+            </div>          <!--panel-default ended -->
+        
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" style="background: #8D9FC4;">
+          <div class="row">
+              <div class="col-lg-5 " >
+                <strong><label><img src="wall_of_fame.png"></img> &nbsp;WALL OF FAME</label></strong>
+              </div> 
+              <div class="col-lg-7">
+                <form class="form" role="form">
+                   <div class="col-lg-3">
+                      <input type="text" class="form-control" placeholder="Search" name="q" id="q" value="">
+                    </div>
+
+                    <div class="col-lg-4">
+                      <select name="serviceLine" class="form-control" defaultLabel="Service Lines" id="serviceLine" >
+                        <option value="">Service Lines</option>
+                        <option value="2" >Analytics</option>
+                        <option value="12" >Analytics-SEA</option>
+                        <option value="9" >Digital Marketing</option>
+                        <option value="20" >Digital Marketing India</option>
+                        <option value="13" >Digital Marketing-SEA</option>
+                        <option value="1" >Technology</option>
+                        <option value="6" >ThoughtBuzz India</option>
+                        <option value="21" >TTN Overheads</option>
+                        <option value="23" >TTND-Intern</option>
+                        <option value="17" >TTND-SEA</option>
+                        <option value="22" >TTNV</option>
+                        <option value="19" >Video Solutions</option>
+                      </select>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <select name="practice" class="form-control" defaultLabel="Practices" id="practice" >
+                        <option value="">Practices</option>
+                        <option value="6" >Admin</option>
+                        <option value="14" >AMC</option>
+                        <option value="63" >Analytics</option>
+                        <option value="46" >Analytics-SEA</option>
+                        <option value="20" >BigData</option>
+                        <option value="80" >BlogMint</option>
+                        <option value="70" >Business Development</option>
+                        <option value="37" >Creative</option>
+                        <option value="10" >Design</option>
+                        <option value="71" >DevOps</option>
+                        <option value="66" >DM India CORPORATE</option>
+                        <option value="60" >Drupal</option>
+                        <option value="73" >Feen</option>
+                        <option value="16" >Finance</option>
+                        <option value="9" >HR</option>
+                        <option value="84" >Intern</option>
+                        <option value="68" >IT</option>
+                        <option value="72" >JVM</option>
+                        <option value="40" >Management</option>
+                        <option value="48" >MARTECH</option>
+                        <option value="23" >Mean</option>
+                        <option value="65" >Media Planning &amp; Buying</option>
+                        <option value="11" >Mobility</option>
+                        <option value="83" >Sales &amp; Marketing</option>
+                        <option value="76" >Security</option>
+                        <option value="58" >Shared Services-SEA</option>
+                        <option value="43" >Social media</option>
+                        <option value="64" >Social Media Marketing</option>
+                        <option value="50" >Social Media-SEA</option>
+                        <option value="28" >Strategy</option>
+                        <option value="74" >Technology Corporate</option>
+                        <option value="75" >Testing</option>
+                        <option value="81" >ThoughtBuzz India</option>
+                        <option value="67" >TTN Overheads</option>
+                        <option value="69" >TTNVManagement</option>
+                        <option value="79" >Video Corporate</option>
+                        <option value="78" >Video Managed Services</option>
+                        <option value="77" >Video Ready</option>
+                      </select>
+                    </div>
+
+                    <div class="col-lg-1">
+                      <i class="fa fa-calendar bigger-icon" id="dateRange" data-onchange="filterUserVote" ></i>
+
+                      <input type="hidden" name="startDate" value="" id="startDate" />
+                      <input type="hidden" name="endDate" value="" id="endDate" />
+
+                    </div>
+                </form>
+              </div>
+
+              <div>
+                
+              </div>
+          </div>      <!--row -->
+        </div>  
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <form class="form " role="form">
+          <div class="form-group">
+           <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+        </form>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      
+       
+            <div class="panel panel-default" style="padding-bottom: 10px;">
+              <div class="panel-heading"  style="background: #8D9FC4;">
+                <div class="row">
+                      <div class="col-md-12">
+                        <strong><img src="silver_badge.png" ></img> MY BADGES</strong>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-3 badge-content-left">
+                    <img src="passport.jpg"></img>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="row"  style="text-align: center;">
+                      <label><a href="#">Ishwar Mani Thapa</a></label>
+                    </div>
+                <table class="table" >
+                  <thead>
+                      <tr>
+                        <th><img src="gold.png"></th>
+                        <th><img src="silver.png"></th>
+                        <th><img src="bronze.png"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                </table>
+                  </div>
+                </div>
+                
+              </div>
+            </div> 
+            
+              <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="active"><a href="#">NEWER BOARD</a></li>
+                <li><a href="#">IDEA</a></li>
+              </ul>
+              
+      
+      <div>
+        
+      </div>
+    </div>
+  </div>
+               <!--col-md-9 ended -->
+
+        <!--col-md-3 ended -->
 </div>          <!--container fluid ended -->
   
 </body>
