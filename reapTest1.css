@@ -1,6 +1,6 @@
 .badge-content-left {
     border-radius: 20%;
-    overflow: hidden;
+   
     height: 48px;
     width: 48px;
     margin-right: 7%;
@@ -9,4 +9,8 @@
 
 .table th, .table td {
     border: 1px !important;
+}
+
+.imager{
+	border-radius: 20%;
 }
