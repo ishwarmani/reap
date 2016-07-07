@@ -1,0 +1,159 @@
+<html>
+<head>
+    <title>Registration</title>
+     <!--<script src="JqueryFile.js"></script>-->
+      <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+   
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .page-header{
+            text-align: center;
+            font-size: 40px;
+            font-family: serif;
+            font-weight: 600;
+            
+            color: darkred;
+        }
+        .body-sty{
+            background-image: url(images/LoginPageImages/background6.jpg);
+        }
+        .btnSubmit{
+    background-color: whitesmoke;
+            font-family: serif;
+            font-weight: 200
+                color : black;
+            align-items: center
+                
+    }
+    </style>
+    <script>
+  
+        $(document).ready(function(){
+             $(".dropdown-menu").on('click', 'li a', function(){
+      $("#btnTeam:first-child").text($(this).text());
+      $("#btnTeam:first-child").val($(this).text());
+   });
+
+        });
+        function checkDetails(){
+             var name=$("#name").val();
+            var id=$("#id").val();
+            var designation=$("#designation").val();
+    var password = $("#pwd").val();
+    var confirmPassword = $("#Cpwd").val();
+            
+            var team=$("#btnTeam").val();
+         // alert(team);
+           
+            if(name==""||id==""||designation==""||password==""||confirmPassword==""||team==""){
+               return true;
+            }
+            else 
+                return false;
+           
+        }
+        function checkPasswordMatch() {
+            var a= checkDetails();
+           if(a==true){
+               alert("Please Enter all details")
+           }else{
+            var password = $("#pwd").val();
+    var confirmPassword = $("#Cpwd").val();
+           
+         if (password == confirmPassword){
+      
+        alert("Password match");
+           $("#btn").attr("disabled",false);
+    }
+            else{
+                $("#pwd").cleanData;
+                 $("#Cpwd").cleanData;
+                
+                
+                alert("Password do not match");
+       
+ $("#btn").attr("disabled","disabled");
+            }   } }
+        
+    </script>
+</head>
+<body class="body-sty">
+   <div class="container-fluid" >
+    <div class="page-header">Welcome to REAP </div>
+
+    </div>
+    <div class="container">
+       <div class="page-body">
+           <form class="form-horizontal" role="form">
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="name">Employee Name:</label>
+      <div class="col-sm-6">
+        <input type="name" class="form-control" id="name" placeholder="Enter name">
+      </div>
+    </div>
+     <div class="form-group">
+      <label class="control-label col-sm-4" for="id">Employee Id:</label>
+      <div class="col-sm-6">
+        <input type="id" class="form-control" id="id" placeholder="Enter Employee Id">
+      </div>
+    </div>
+     <div class="form-group">
+      <label class="control-label col-sm-4" for="name">Team:</label>
+      <div class="col-sm-6">
+        <!--<input type="text" class="form-control" id="team" placeholder="Enter  Team">-->
+       <div class="dropdown" id="teamname">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#C2D2D1 ;color:black;font-family:serif" id="btnTeam">Select Your Team
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#" style="background-color:#cccccc ; font-family:serif" >JVM</a></li>
+      <li class="divider"></li>
+      <li><a href="#" style="background-color:#cccccc;font-family:serif">MEAN</a></li>
+       <li class="divider"></li>
+      <li><a href="#" style="background-color:#cccccc ;font-family:serif">Data Analytics</a></li>
+         <li class="divider"></li>
+       <li><a href="#" style="background-color:#cccccc ;font-family:serif">Video Solutions</a></li>
+          <li class="divider"></li>
+       <li><a href="#" style="background-color:#cccccc;font-family:serif">Management</a></li>
+    </ul>
+  </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="designation">User Designation:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="designation" placeholder="Enter designation">
+      </div>
+    </div>
+     <div class="form-group">
+      <label class="control-label col-sm-4" for="pwd">Enter Password:</label>
+      <div class="col-sm-6">
+        <input type="password" class="form-control" id="pwd" placeholder="Enter Password">
+      </div>
+    </div>
+ 
+     <div class="form-group">
+      <label class="control-label col-sm-4" for="Cpwd">Confirm Your Password:</label>
+      <div class="col-sm-6">
+        <input type="password" class="form-control" id="Cpwd" placeholder="Enter Password" onchange="checkPasswordMatch()">
+        <div class="divCheckPasswordMatch"></div>
+      </div>
+    </div>
+    
+    <div class="form-group" style="text-align:center">
+     <button type="submit" id="btn" class="btn btn-default btnSubmit" onclick="checkPasswordMatch()"  >Register Now</button>
+      <!--<div class="<col-sm-6></col-sm-6>">
+         <button type="submit" id="btn" class="btn btn-default btnSubmit" onclick="checkDetails()" >Register Now</button>
+        <img src="images/LoginPageImages/register.png" href="#" style="align:right">
+      </div>
+      <div class="col-sm-6 ">
+         
+      </div>-->
+    </div>
+  </form>
+       </div> 
+    </div>
+</body>
+</html>

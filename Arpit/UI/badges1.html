@@ -1,0 +1,473 @@
+<head>
+    <title>Badges</title>
+    <link rel="icon" href="images/LoginPageImages/favicon.ico">
+    <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @media(max-width:1200px){
+              .custom-availablePoints {
+    width: 100%;
+    background: #36a699;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+            
+            
+            
+            
+        }
+        .head-sty {
+            width: 100%;
+            float: left;
+            padding: 4px 20px;
+            border-radius: 5px 5px 0 0;
+            height: 38px;
+            background-color: #8d9fc4;
+        }
+        
+        .head-sty h3 {
+            font-size: 14px;
+            margin: 8px 0 0 0;
+            color: #ffffff;
+            font-weight: bold;
+            float: left;
+        }
+        
+        .head-sty img {
+            vertical-align: middle;
+            border: 0;
+            float: left;
+            margin-right: 10px;
+            margin-top: 4px;
+            margin-bottom: 5px;
+        }
+        
+        .panel-body {
+            height: 127px;
+            border-color: darkgray;
+        }
+        
+        .badgeDetail {
+            margin: 16px 0 0 0;
+        }
+        /* .badgeDetail img{
+            float: left;
+           width: 43px;
+           height: 48px;
+           border-radius: 5px 5px 5px 5px;
+           padding: 0;
+           overflow-x: hidden;
+    overflow-y: hidden;
+           margin-left: -25px;
+           margin-right: 7%;
+    margin-bottom: 22px;
+           object-position:left;
+           
+       }*/
+        .point{
+            position: absolute;
+            right: -22px;
+            top: -10px;
+        }
+        
+        .myimgsty {
+            float: left;
+            width: 43px;
+            height: 48px;
+            border-radius: 5px 5px 5px 5px;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            margin-left: -20px;
+            margin-right: 7%;
+            margin-bottom: 22px;
+            object-position: left;
+        }
+        
+        .badgeDetail h3 {
+            float: left;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 0px;
+            margin-left: 10px;
+            color: black;
+        }
+        
+        .badgeDetail-cont img {
+            width: 20px;
+            height: auto;
+            margin-bottom: 0px;
+        }
+        
+        .badgeDetail-cont span {
+            vertical-align: middle;
+            display: block;
+            width: 33%;
+            float: left;
+            text-align: left
+        }
+        
+        .badgeDetail-cont span i {
+            display: block;
+            font-style: normal;
+            padding-left: 2px;
+            color: #4f6173;
+        }
+        
+        .h1point {
+            position: absolute;
+            top: 55px;
+            left: 25px;
+            margin-left: 20px;
+            color: whitesmoke;
+        }
+        /* 
+       .body-cont2 {
+           color: whitesmoke;
+           text-align: center;
+           vertical-align: baseline;
+       }*/
+        /*  .redeempoint .points {
+                     float: right;
+    position: absolute;
+  
+           
+}*/
+        
+        .rdmBtn {
+            margin-top: 30px;
+            background-color: #505b72;
+            float: right;
+            border-radius: 5px 5px 5px 5px;
+            color: #e8e9ec;
+            border-width: 0px;
+            padding: 5px;
+        }
+        
+        .abc {
+            color: red;
+        }
+        
+        .nav-tabs.tab {
+            z-index: 1;
+            background-color: #dcdcdc;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-collapse: collapse;
+            margin: 5px;
+            overflow: hidden;
+            /* border-top-color: initial;
+    border-top-style: initial;
+    border-top-width: 0px;
+    border-right-color: initial;
+    border-right-style: initial;
+    border-right-width: 0px;
+    border-bottom-color: initial;
+    border-bottom-style: initial;
+    border-bottom-width: 0px;
+    border-left-color: initial;
+    border-left-style: initial;
+    border-left-width: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;*/
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .nav-tabs.tab>li {
+            margin-bottom: -5px;
+            margin-top: -5px;
+            display: table-cell;
+        }
+        
+        .nav-tabs.tab>li>a {
+            margin-top: 3px;
+            margin-bottom: 3px;
+            color: black;
+            font-weight: bolder;
+            text-align: left;
+        }
+        
+        .nav-tabs.tab>li.active>a {
+            background-color: #8d9fc4;
+            color: whitesmoke;
+            border-top-color: initial;
+            border-top-style: initial;
+            border-top-width: 0px;
+            border-right-color: initial;
+            border-right-style: initial;
+            border-right-width: 0px;
+            border-bottom-color: initial;
+            border-bottom-style: initial;
+            border-bottom-width: 0px;
+            border-left-color: initial;
+            border-left-style: initial;
+            border-left-width: 0px;
+            border-image-source: initial;
+            border-image-slice: initial;
+            border-image-width: initial;
+            border-image-outset: initial;
+            border-image-repeat: initial;
+        }
+        
+        .con {
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        
+        .select-sty {
+            width: 35%;
+            margin: 20px;
+        }
+        
+        .table-style {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+            border: 1px;
+            border-color: #f4f4f4;
+            background-color: transparent;
+            border-spacing: 0;
+            display: table;
+        }
+        
+        th {
+            padding: 10px;
+        }
+      
+        
+        td {
+            width: 220px;
+            font-weight: 600;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#btn").hover(function() {
+                $(this).css("color", "red");
+            }, function() {
+                $(this).css("color", "#e8e9ec");
+            });
+
+        });
+        // $("a").onclick.css("background-color","#8d9fc4");
+    </script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="panel">
+                    <div class="panel-heading head-sty">
+                        <img src="images/Badge.png">
+                        <h3>BADGES &amp; POINTS</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+
+                            <div class="col-lg-7 col-md-7" style="left: 11px; top: -1px;">
+
+                                <div class="badgeDetail">
+                                    <div class="col-lg-3 col-md-3 myimgsty">
+                                        <img class="img-responsive" src="images/myImg.png" style="margin-left: 2px; margin-top: -1px;">
+
+                                    </div>
+
+                                    <div class="col-lg-9 col-md-9">
+                                        <h3><a href="#" style="color:black"> Arpit Sohar</a></h3>
+
+                                        <div class="badgeDetail-cont">
+                                            <span>
+                                   
+                                    <img src="images/LoginPageImages/b1.png"> <br>
+                                    <i>0</i>
+                                    </span>
+
+                                            <span>   <img src="images/LoginPageImages/b2.png"><br>
+                                    <i style="display:block">0</i>
+                                           </span>
+                                            <span>    
+                                             <img src="images/LoginPageImages/b3.png"><br>
+                                    <i>0</i></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-5 ">
+                                <div class=" points" style="height:auto">
+                                    <img class="img-responsive" src="images/BadgeAdjacent.png" style="margin-left: 15px">
+
+
+
+
+                                    <h1 class="h1point">0 <small style="color:whitesmoke">pts</small></h1>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <input type="button" id="btn" class="rdmBtn" value="Redeem Points">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-8 col-md-8">
+
+                <!--    
+                     <ul class="nav nav-tabs tab" id="myTab" >
+                         <li><a    data-toggle:"tab" href="#all">ALL(0)</a></li>
+                         <li><a    data-toggle:"tab" href="#menu1">BADGES SHARED(0)</a></li>
+                         <li><a    data-toggle:"tab" href="#">BADGES RECEIEVED(0)</a></li>
+                         <li><a    data-toggle:"tab" href="#">BADGES HISTORY</a></li>
+                         <li><a    data-toggle:"tab" href="#">POINTS REDEEMED</a></li>
+                     </ul>
+                    
+                <div class="tab-content">
+                        <div id="all" class="tab-pane fade " role="tabpanel">
+                            <p> No Data Found</p>   
+                        </div>
+                         <div id="menu1" class="tab-pane fade" role="tabpanel">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+            
+                
+                </div>
+                
+                
+                
+            </div>-->
+
+
+
+
+
+                <ul class="nav nav-tabs tab">
+                    <li><a data-toggle="tab" href="#all">ALL(0)</a>
+                    </li>
+                    <li><a data-toggle="tab" href="#BadgesShared">BADGES SHARED(0)</a>
+                    </li>
+                    <li><a data-toggle="tab" href="#BadgesRecieved">BADGES RECIEVED(0)</a>
+                    </li>
+                    <li><a data-toggle="tab" href="#BadgesHistory">BADGES HISTORY</a>
+                    </li>
+                    <li><a data-toggle="tab" href="#PointsRedeemed">POINTS REDEEMED</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="all" class="tab-pane fade ">
+                        <div class="con">No Data Found</div>
+                    </div>
+                    <div id="BadgesShared" class="tab-pane fade">
+                        <div class="con">No Data Found</div>
+                    </div>
+                    <div id="BadgesRecieved" class="tab-pane fade">
+                        <div class="con">No Data Found</div>
+                    </div>
+                    <div id="BadgesHistory" class="tab-pane fade">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <select class="form-control select-sty">
+                                        <option value="2016">2016</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <select class="form-control select-sty">
+                                        <option value="Q2">Q2</option>
+                                        <option value="Q3">Q3</option>
+                                        <option value="Q4">Q4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <table class="table-bordered table-hover table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:192px" colspan="4">Badges to be shared</th>
+                                        </tr>
+                                        <tr style="margin:15%">
+                                            <th colspan="4"> </th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>Current Badge Balance</td>
+                                            <td>2 4 6 </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Date</td>
+                                            <td>Transaction</td>
+                                            <td>Opening Balance</td>
+                                            <td>Closing Balance</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <h2>No Data Found</h2>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <br>
+                                <br>
+                                <table class="table-bordered table-hover table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:192px" colspan="4">Badges Recieved</th>
+                                        </tr>
+                                        <tr style="margin:15%">
+                                            <th colspan="4"> </th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>Current Point Balance/Badge Balance</td>
+                                            <td>0 0 0 </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Date</td>
+                                            <td>Transaction</td>
+                                            <td>Opening Balance</td>
+                                            <td>Closing Balance</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <h2>No Data Found</h2>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="PointsRedeemed" class="tab-pane fade">
+                        <div class="con">No Data Found</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
